@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-image: url(~/static/background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.containerMain {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 0.9rem "Poppins", sans-serif;
+}
+
+ul {list-style-type: none}
+a {text-decoration: none}
+button {cursor: pointer; background: transparent; border: 0}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #009B90;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0C7169;
+  border-radius: 10rem 0 0 10rem;
+
+}
