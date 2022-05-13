@@ -2,14 +2,14 @@
   <header>
     <div class="container">
       <Logo />
-      <div class="menu">
+      <!-- <div class="menu">
         <li class="active">
           Home
         </li>
         <li>Parceiros</li>
         <li>Sobre</li>
         <li>Contato</li>
-      </div>
+      </div> -->
       <div class="buttonContainer">
         <button>
           Conhecer a Resolv

@@ -41,7 +41,7 @@
         </p>
 
         <button>
-          Saiba mais
+          Ver protótipo de fluxo
         </button>
 
         <div class="linksContainer">
@@ -196,6 +196,57 @@ export default {
             color: black;
             opacity: 0.45;
           }
+        }
+      }
+
+    }
+
+    @media (max-width: 1100px) {
+      .infoContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border-bottom: 1px solid #C4C4C4;
+        padding-bottom: 2rem;
+
+        .infoSingle {
+          &:nth-of-type(1),
+          &:nth-of-type(2) {
+            border-bottom: 1px solid #C4C4C4;
+            border-right: 0;
+          }
+        }
+      }
+
+      .aboutContainer {
+        flex-direction: column;
+
+        .aboutDataLeft {
+
+          h2 {
+            font-size: 1.8rem;
+          }
+
+          .box {
+            margin-right: 0;
+            padding: 1.2rem;
+
+            img {
+              display: none;
+            }
+          }
+        }
+
+        .aboutDataRight {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    @media (max-width: 415px) {
+      .aboutContainer {
+        .aboutDataLeft h2 {
+          font-size: 1.5rem;
+          list-style: 30px;
         }
       }
 

@@ -2,6 +2,7 @@
   <div class="main">
     <Banner />
     <Details />
+    <Clock />
   </div>
 </template>
 

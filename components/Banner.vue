@@ -2,7 +2,7 @@
   <div class="banner">
     <div class="bannerData">
       <h2>
-        Fraude pix veio para <br>
+        Fraude pix veio para<br>
         <span>resolver</span> o risco de <br>
         <b>golpes e fraudes</b>
       </h2>
@@ -25,11 +25,12 @@
 </template>
 
 <script>
+
 export default {
   name: 'BannerItem',
-  data: () => {
-    return {}
-  },
+  data: () => ({
+
+  }),
   methods: {}
 }
 </script>
@@ -116,6 +117,41 @@ export default {
 
       img {
         width: 90%;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      height: auto;
+      padding: 5rem 0;
+
+      .bannerData {
+        h2 {
+          font-size: 2.8rem;
+          line-height: 60px;
+        }
+      }
+
+      .bannerImage img {
+        width: 100%;
+
+        margin-top: 2rem;
+      }
+    }
+
+    @media (max-width: 462px) {
+      .bannerData {
+        h2 {
+          font-size: 2.4rem;
+          line-height: 50px;
+        }
+      }
+    }
+
+    @media (max-width: 404px) {
+      .bannerData h2 {
+        font-size: 2.2rem;
+        line-height: 45px;
       }
     }
 
