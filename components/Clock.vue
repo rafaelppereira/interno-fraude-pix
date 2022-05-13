@@ -169,6 +169,11 @@ export default {
           font-size: 6.25rem;
           margin: 0 0.5rem;
           color: #ffffff;
+
+          @media (max-width: 768px) {
+            color: #232323;
+            margin: 0 0.2rem;
+          }
         }
       }
     }
